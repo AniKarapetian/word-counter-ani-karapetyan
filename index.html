@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Word counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div id="main">
+      <h2>Word counter</h2>
+
+      <table>
+        <tr>
+          <th>Sentences count</th>
+          <th>Words count</th>
+          <th>Letters count</th>
+        </tr>
+        <tr>
+          <td id="sentence-count">0</td>
+          <td id="word-count">0</td>
+          <td id="letter-count">0</td>
+        </tr>
+      </table>
+      <br />
+
+      <button onclick="generateBackgroundColor()">Change background</button>
+
+      <button onclick="generateStatistics()">Generate statistics</button>
+      <button onclick="reset()">Reset</button><br /><br />
+
+      <p>Type your text here</p>
+      <textarea name="text-box" id="text-box"></textarea>
+    </div>
+  </body>
+</html>
